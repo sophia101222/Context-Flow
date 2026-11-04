@@ -1,0 +1,19 @@
+{
+  "name": "context-flow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A developer context recovery tool.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard",
+    "dev:extension": "npm run dev --workspace=apps/extension",
+    "build:dashboard": "npm run build --workspace=apps/dashboard",
+    "build:extension":"npm run build --workspace=apps/extension",
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
